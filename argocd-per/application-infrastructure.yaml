@@ -1,0 +1,19 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: infrastructure
+  namespace: openshift-gitops
+spec:
+  destination:
+    namespace: infra
+    server: "https://kubernetes.default.svc"
+  project: infrastructure
+  syncPolicy:
+    automated:
+      allowEmpty: true
+      selfHeal: true
+  syncOptions:
+  - CreateNamespace=true
+  source:
+    path: infrastructure-argocd/infrastructure-application
+    repoURL: 'https://github.com/tkagn/ocp4gitops-public'
