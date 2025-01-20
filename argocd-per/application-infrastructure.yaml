@@ -6,11 +6,11 @@ metadata:
 spec:
   destination: 
     server: "https://kubernetes.default.svc"
-    namespace: cluster-ops
-  project: infrastructure 
+    namespace: default
+  project: default
   syncPolicy:
     automated:
-      allowEmpty: true
+     # allowEmpty: true
       selfHeal: true
   syncOptions:
   - CreateNamespace=true

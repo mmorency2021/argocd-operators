@@ -1,10 +1,10 @@
 ---
-apiVersion: v1
-kind: Namespace
-metadata:
-  name: openshift-local-storage
-  annotations:
-    argocd.argoproj.io/sync-wave: "0"
+#apiVersion: v1
+#kind: Namespace
+#metadata:
+#  name: openshift-local-storage
+#  annotations:
+#    argocd.argoproj.io/sync-wave: "0"
 
 ---
 apiVersion: operators.coreos.com/v1
@@ -25,7 +25,7 @@ metadata:
   name: local-storage-operator
   namespace: openshift-local-storage
   annotations:
-    argocd.argoproj.io/sync-wave: "1"
+    argocd.argoproj.io/sync-wave: "2"
 spec:
   channel: "4.17"  # <-- Channel should be used corresponding to the OCP version being used.
   installPlanApproval: Automatic
@@ -40,7 +40,7 @@ metadata:
   name: auto-discover-devices
   namespace: openshift-local-storage
   annotations:
-    argocd.argoproj.io/sync-wave: "2"
+    argocd.argoproj.io/sync-wave: "3"
 spec:
   nodeSelector:
     nodeSelectorTerms:
@@ -58,7 +58,7 @@ metadata:
   name: "local-disks"
   namespace: "openshift-local-storage"
   annotations:
-    argocd.argoproj.io/sync-wave: "3"
+    argocd.argoproj.io/sync-wave: "4"
 spec:
   nodeSelector:
     nodeSelectorTerms:
