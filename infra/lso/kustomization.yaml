@@ -4,14 +4,14 @@ kind: Kustomization
 
 resources:
   - lso.yaml
-
+  - namespace.yaml
 #configMapGenerator:i []
 #  - files:
 #       - extra-manifests/master-core-password.yaml
 #       name: extra-manifests-cm
 #       namespace: mno-cu
 
-generatorOptions:
-  disableNameSuffixHash: true
+#generatorOptions:
+#  disableNameSuffixHash: true
 
 
