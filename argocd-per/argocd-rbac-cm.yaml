@@ -4,7 +4,7 @@ metadata:
   name: argocd-rbac-cm
   namespace: openshift-gitops
   labels:
-    app.kubernetes.io/name: argocd-rbac-cm
+    app.kubernetes.io/name: argocd-cm
     app.kubernetes.io/part-of: argocd
 data:
   policy.csv: |

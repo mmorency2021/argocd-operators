@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: AppProject
 metadata:
-  name: infrastructure
+  name: infra
   namespace: openshift-gitops
 spec:
   destinations:
@@ -12,5 +12,5 @@ spec:
   clusterResourceWhitelist:
     - group: '*'
       kind: '*'
-
-
+    - group: ""
+      kind: Namespace
