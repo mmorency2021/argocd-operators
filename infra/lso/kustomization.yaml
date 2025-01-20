@@ -4,7 +4,7 @@ kind: Kustomization
 
 resources:
 #  - lso.yaml
-  - namespace.yaml
+#  - namespace.yaml
 #configMapGenerator:i []
 #  - files:
 #       - extra-manifests/master-core-password.yaml
