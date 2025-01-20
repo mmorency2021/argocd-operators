@@ -1,13 +1,13 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: infrastructure
+  name: test
   namespace: openshift-gitops
 spec:
-  destination:
-    namespace: infra
+  destination: 
     server: "https://kubernetes.default.svc"
-  project: infrastructure
+    namespace: cluster-ops
+  project: infrastructure 
   syncPolicy:
     automated:
       allowEmpty: true
