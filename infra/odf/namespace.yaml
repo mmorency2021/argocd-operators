@@ -4,7 +4,7 @@ kind: Namespace
 metadata:
   name: openshift-storage
   annotations:
-    argocd.argoproj.io/sync-wave: "0"
+    argocd.argoproj.io/sync-wave: "5"
 
 ---
 apiVersion: operators.coreos.com/v1
@@ -13,7 +13,7 @@ metadata:
   name: openshift-storage-operatorgroup
   namespace: openshift-storage
   annotations:
-    argocd.argoproj.io/sync-wave: "1"
+    argocd.argoproj.io/sync-wave: "6"
 spec:
   targetNamespaces:
   - openshift-storage
@@ -25,7 +25,7 @@ metadata:
   name: odf-operator
   namespace: openshift-storage
   annotations:
-    argocd.argoproj.io/sync-wave: "2"
+    argocd.argoproj.io/sync-wave: "7"
 spec:
   channel: stable-4.17  # <-- Channel should be used corresponding to the OCP version being used.
   installPlanApproval: Automatic
