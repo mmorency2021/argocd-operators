@@ -23,9 +23,9 @@ spec:
       spec:
         accessModes:
         - ReadWriteOnce
-       # resources:
-       #   requests:
-       #     storage: "Gi"  # <-- This should be changed as per storage size. Minimum 100 GiB and Maximum 4 TiB
+        resources:
+          requests:
+            storage: "450Gi"  # <-- This should be changed as per storage size. Minimum 100 GiB and Maximum 4 TiB
         storageClassName: local-sc  # match this with the storage block created at the LSO step
         volumeMode: Block
     name: ocs-deviceset
