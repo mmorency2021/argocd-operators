@@ -10,8 +10,9 @@ spec:
   project: infra
   syncPolicy:
     automated:
-     # allowEmpty: true
+      allowEmpty: true
       selfHeal: true
+      prune: true
   syncOptions:
   - CreateNamespace=true
   source:
