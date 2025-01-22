@@ -4,7 +4,6 @@ kind: Namespace
 metadata:
   name: openshift-local-storage
   annotations:
-    #argocd.argoproj.io/sync-wave: "-1"
     argocd.argoproj.io/hook: PreSync
 ---
 apiVersion: operators.coreos.com/v1
@@ -13,7 +12,6 @@ metadata:
   name: local-operator-group
   namespace: openshift-local-storage
   annotations:
-    #argocd.argoproj.io/sync-wave: "-1"
     argocd.argoproj.io/hook: PreSync
 spec:
   targetNamespaces:
