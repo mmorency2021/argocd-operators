@@ -1,0 +1,15 @@
+---
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+patches:
+  - path: patching-console.yaml
+    target: 
+      kind:
+      name: consoles.operator.openshift.io 
+      name: console
+
+
+resources:  
+  - lso/
+#  - test/
+  - odf/

@@ -15,6 +15,8 @@ spec:
       prune: true
   syncOptions:
   - CreateNamespace=true
+  - ServerSideApply=true
+  - Validate=false 
   source:
     path: infra
     repoURL: 'https://github.com/mmorency2021/argocd-operators.git'
