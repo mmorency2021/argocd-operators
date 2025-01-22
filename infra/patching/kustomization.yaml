@@ -10,6 +10,6 @@ patches:
 
 
 resources:  
-  - lso/
+#  - lso/
 #  - test/
-  - odf/
+#  - odf/
