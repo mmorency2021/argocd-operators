@@ -4,7 +4,7 @@ kind: Kustomization
 
 resources:
   - namespace.yaml
-#  - localStorageOperator.yaml
+  - localStorageOperator.yaml
 #configMapGenerator:i []
 #  - files:
 #       - extra-manifests/master-core-password.yaml
