@@ -4,4 +4,4 @@ kind: Kustomization
 resources: 
   - lso/
 #  - test/
-  - odf/
+#  - odf/
