@@ -40,3 +40,4 @@ spec:
       requests:
         cpu: "2"
         memory: "5Gi"
+  enableCephTools: true
