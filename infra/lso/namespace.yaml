@@ -12,7 +12,7 @@ metadata:
   name: local-operator-group
   namespace: openshift-local-storage
   annotations:
-    argocd.argoproj.io/hook: PreSync
+    argocd.argoproj.io/sync-wave: "-1"  
 spec:
   targetNamespaces:
   - openshift-local-storage
