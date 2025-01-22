@@ -1,4 +1,10 @@
-- op: add
-  path: /spec/plugins
-  value: odf-console
-
+apiVersion: operator.openshift.io/v1
+kind: Console
+metadata:
+  name: cluster
+spec:
+  plugins:
+  - gitops-plugin
+  - monitoring-plugin
+  - networking-console-plugin
+  - odf-console
