@@ -43,5 +43,3 @@ spec:
     hostname: ""
     secret:
       name: ""
-  unsupportedConfigOverrides: null
-    status: "False"
