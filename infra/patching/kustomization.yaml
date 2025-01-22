@@ -4,11 +4,8 @@ kind: Kustomization
 patches:
   - path: patching-console.yaml
     target: 
-      kind:
-      name: consoles.operator.openshift.io 
-      name: console
-
-
+      kind: consoles.operator.openshift.io
+      name: Console 
 resources:  
 #  - lso/
 #  - test/
