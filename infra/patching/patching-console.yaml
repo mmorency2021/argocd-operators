@@ -7,4 +7,4 @@ spec:
   - gitops-plugin
   - monitoring-plugin
   - networking-console-plugin
-  - odf-console
+#  - odf-console
