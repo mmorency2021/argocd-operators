@@ -5,7 +5,7 @@ metadata:
   name: auto-discover-devices
   namespace: openshift-local-storage
   annotations:
-    argocd.argoproj.io/sync-wave: "0"
+    argocd.argoproj.io/sync-wave: "1"
     argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
 spec:
   nodeSelector:
@@ -24,7 +24,7 @@ metadata:
   name: "local-disks"
   namespace: "openshift-local-storage"
   annotations:
-    argocd.argoproj.io/sync-wave: "1"
+    argocd.argoproj.io/sync-wave: "2"
     argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
 spec:
   nodeSelector:

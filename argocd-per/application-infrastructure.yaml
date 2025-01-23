@@ -16,7 +16,7 @@ spec:
 
   syncOptions:
   - CreateNamespace=true
-  - ServerSideApply=true
+#  - ServerSideApply=true
   - Validate=false 
   source:
     path: infra
