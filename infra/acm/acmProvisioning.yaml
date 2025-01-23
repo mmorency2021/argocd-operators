@@ -5,7 +5,7 @@ metadata:
   name: provisioning-configuration
   annotations:
     argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
-    argocd.argoproj.io/sync-wave: "3"
+    argocd.argoproj.io/sync-wave: "6"
 spec:
   watchAllNamespaces: true
   # some servers do not support virtual media installations
