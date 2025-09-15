@@ -6,6 +6,6 @@ resources:
 #  - test/
 #  - odf/
 #  - patching/
-  - acm/
-  - talm/
+#  - acm/
+#  - talm/
 #  - observability/
