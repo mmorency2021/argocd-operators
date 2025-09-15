@@ -7,5 +7,5 @@ resources:
 #  - odf/
 #  - patching/
   - acm/
-  - talm/
+#  - talm/
 #  - observability/
