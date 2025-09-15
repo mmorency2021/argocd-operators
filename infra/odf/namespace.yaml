@@ -30,7 +30,7 @@ metadata:
   annotations:
     argocd.argoproj.io/sync-wave: "0"
 spec:
-  channel: stable-4.17  # <-- Channel should be used corresponding to the OCP version being used.
+  channel: stable-4.19  # <-- Channel should be used corresponding to the OCP version being used.
   installPlanApproval: Automatic
   name: odf-operator
   source: redhat-operators  # <-- Modify the name of the redhat-operators catalogsource if not default
