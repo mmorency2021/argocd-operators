@@ -5,7 +5,7 @@ resources:
   - operator.yaml
   - multiHubcluster.yaml
   - acmProvisioning.yaml
-  - acmAgentServiceConfig.yaml
+  - mhc.yaml
 generatorOptions:
   disableNameSuffixHash: true
 
