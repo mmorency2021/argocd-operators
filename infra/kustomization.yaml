@@ -8,4 +8,4 @@ resources:
 #  - patching/
   - acm/
   - talm/
-  - observability/
+#  - observability/
